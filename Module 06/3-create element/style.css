@@ -1,0 +1,10 @@
+input[type="button"] {
+  background-color: mediumpurple;
+  text-transform: capitalize;
+  color: aliceblue;
+  font-weight: bold;
+  padding: 5px;
+  margin: 3px;
+  border-radius: 5px;
+  font-size: 14px;
+}

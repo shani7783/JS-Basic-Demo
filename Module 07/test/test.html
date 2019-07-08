@@ -1,0 +1,62 @@
+<head>
+  <script type="text/javascript">
+    function myFunction() {
+      debugger;
+      let i = 0;
+
+      let noStop = document.getElementById("noStop");
+      let innerNoStop = document.getElementById("innerNoStop");
+      let innerNoStopText = document.getElementById("innerNoStopText");
+      let outerNoStopText = document.getElementById("outerNoStopText");
+
+      noStop.addEventListener("mousemove", function(event) {
+        outerNoStopText.innerText = i++;
+      });
+
+      innerNoStop.addEventListener("mousemove", function(event) {
+        innerNoStopText.innerText = i++;
+      });
+
+      let j = 0;
+
+      let stop = document.getElementById("stop");
+      let innerStop = document.getElementById("innerStop");
+      let innerStopText = document.getElementById("innerStopText");
+      let outerStopText = document.getElementById("outerStopText");
+
+      stop.addEventListener("mousemove", function(e) {
+        outerStopText.innerText = j++;
+        e.stopPropagation();
+      });
+      innerStop.addEventListener("mousemove", function(e) {
+        innerStopText.innerText = j++;
+        e.stopPropagation();
+      });
+    }
+  </script>
+</head>
+<body onload="myFunction()">
+  <div id="goLeft">
+    <h3>I don't stop propagation</h3>
+    <div id="noStop" style="background-color: pink">
+      <div
+        id="innerNoStop"
+        style="background-color: yellowgreen; width: 200px; height: 200px;"
+      ></div>
+    </div>
+    <div id="outerNoStopText" class="movementText"></div>
+    <div id="innerNoStopText" class="movementText"></div>
+  </div>
+
+  <div id="goRight">
+    <h3>I stop propagation</h3>
+    <div id="stop" style="background-color: pink">
+      <div
+        id="innerStop"
+        style="background-color: yellowgreen; width: 200px; height: 200px;"
+      ></div>
+    </div>
+    <div id="outerStopText" class="movementText"></div>
+    <div id="innerStopText" class="movementText"></div>
+  </div>
+</body>
