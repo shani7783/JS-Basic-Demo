@@ -1,0 +1,26 @@
+input[type="button"], input[type="text"]{
+  padding: 5px;
+  margin: 3px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+input[type="button"] {
+  background-color: mediumpurple;
+  text-transform: capitalize;
+  color: aliceblue;
+  font-weight: bold;
+}
+
+input[type="text"]{
+  width: 500px;
+}
+
+label {
+  width: 150px;
+  display: inline-block;
+}
+
+.appendHere{
+  margin-top: 50px;
+}

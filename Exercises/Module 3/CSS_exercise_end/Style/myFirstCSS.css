@@ -1,0 +1,31 @@
+﻿/* element selector */
+a {
+	color: orange;
+	font-size: 18px;
+}
+
+/* class selector */ 
+.middle {
+	color: blue;
+}
+
+/*descendant selector*/
+.middle li {
+	color: red;
+}
+
+/*chaining selectors*/
+li.bold-item {
+	font-weight: bold;
+}
+
+/*group selectors*/
+.bottom,
+.middle {
+	font-size: 16px;
+}
+
+/*child selector*/
+div > span {
+	color: purple;
+}

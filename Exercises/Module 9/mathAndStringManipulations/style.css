@@ -1,0 +1,17 @@
+input[type="text"], input[type="button"], div{
+    padding: 5px;
+    margin: 3px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input[type="button"] {
+    background-color: mediumpurple;
+    text-transform: capitalize;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+h3 {
+    color:purple;
+}
