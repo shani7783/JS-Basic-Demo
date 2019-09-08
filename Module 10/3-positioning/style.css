@@ -1,0 +1,76 @@
+.fixedDiv {
+  position: fixed;
+  top: 85px;
+  left: 200px;
+  width: 85px;
+  height: 85px;
+  background-color: yellow;
+}
+
+.relativeDiv {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+
+.absoluteDiv {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 50px;
+  right: -20px;
+  background-color: green;
+}
+
+.z-indexDiv {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+
+.first {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 50px;
+  right: -20px;
+  background-color: yellow;
+  z-index: 3;
+}
+
+.second {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 50px;
+  background-color: green;
+}
+
+.third {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 90px;
+  right: 20px;
+  background-color: blue;
+  z-index: 1;
+}
+
+.absolutely {
+  position: absolute;
+  left: 100px;
+  top: 150px;
+}
+
+.absolutelyToo {
+  position: absolute;
+  left: 60px;
+  top: 200px;
+}
+
+.regular {
+  width: 200px;
+  margin-left: 250px;
+}

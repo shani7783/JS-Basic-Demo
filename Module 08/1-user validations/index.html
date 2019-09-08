@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>User input validations</title>
+    <script src="validation.js" type="text/javascript"></script>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>User input validation example</h1>
+
+    <form>
+      <div>
+        <label for="userName">User Name</label>
+        <input id="userName" type="text" placeholder="User name" />
+        <label for="userName11">Test</label>
+        <input id="userName11" required type="text" />
+      </div>
+      <br />
+      <div>
+        <label for="address">Address</label>
+        <input id="address" type="text" placeholder="Address" />
+      </div>
+      <br />
+      <div>
+        <label for="password">Password</label>
+        <input id="password" type="password" placeholder="Password" />
+      </div>
+      <br />
+      <div>
+        <input class="button" type="button" value="Check form" />
+      </div>
+      <div id="errorMessage"></div>
+    </form>
+  </body>
+</html>

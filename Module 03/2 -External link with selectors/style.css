@@ -1,0 +1,35 @@
+body {
+    background-color: lightgreen; 
+    margin: 10px;
+}
+
+.redText{
+    color: red;
+}
+
+#boldText {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+div {
+    width: 100px;
+    height: 150px;
+    background-color: green;
+}
+
+div.blueText {
+    color:blue;
+}
+
+div span {
+    color: yellow;
+}
+
+.parent>p {
+    color: white;
+}
+
+div, p {
+    text-decoration: underline;
+}

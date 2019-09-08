@@ -1,0 +1,11 @@
+
+.errorMessage {
+    color: red; 
+    width: 400px;
+    height: 100px; 
+    display: block;
+}
+
+.errorMessageHidden {
+    display: none;
+}
